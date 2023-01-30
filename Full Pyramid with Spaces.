@@ -1,0 +1,29 @@
+int main()
+{	
+	int r, c;
+	cin >> r;
+	cin >> c;
+  for(int row = 0; row < r ; row++)
+	 {
+		for(int i = 0; i < r-row-1  ; i++)
+		{
+		    cout << "  ";	
+		}
+		int skipper =0;
+		for ( int j = r-row-1  ; j <= r -1 + row  ; j++)
+		{
+			if ((skipper%2) == 0)	
+			{
+		      cout << "X ";
+			  skipper+=1;
+			}
+			else
+			{
+			  cout << "  ";
+			  skipper+=1;
+			}
+		}
+		
+		cout << endl;
+	 }
+ }
